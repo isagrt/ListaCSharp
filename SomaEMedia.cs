@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using System.Linq;
 
 
 class SomaEMedia
@@ -21,24 +21,29 @@ class SomaEMedia
         for (int i = 0; i < quantidade; i++)
         {
             Console.Write($"Digite o número {i + 1}: ");
-            double num = Convert.ToDouble(Console.ReadLine());
+            double num;
+
+            while (!double.TryParse(Console.ReadLine(), out num))
+            {
+                Console.Write("Valor inválido, digite novamente: ");
+            }
             numeros.Add(num);
         }
 
-        double soma = CalcularSoma(numeros);
-        double media = soma / numeros.Count;
+        double soma = numeros.Sum();
+        double media = numeros.Average();
 
         Console.WriteLine($"Soma: {soma}");
         Console.WriteLine($"Média: {media}");
     }
 
     static double CalcularSoma(List<double> numeros)
-{
-    double soma = 0;
-    foreach (double num in numeros)
-        soma += num;
+    {
+        double soma = 0;
+        foreach (double num in numeros)
+            soma += num;
 
-    return soma;
-}
+        return soma;
+    }
 }
 
