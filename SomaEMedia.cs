@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 
 
+
 class SomaEMedia
 {
     static void Main()
@@ -23,5 +24,21 @@ class SomaEMedia
             double num = Convert.ToDouble(Console.ReadLine());
             numeros.Add(num);
         }
+
+        double soma = CalcularSoma(numeros);
+        double media = soma / numeros.Count;
+
+        Console.WriteLine($"Soma: {soma}");
+        Console.WriteLine($"Média: {media}");
     }
+
+    static double CalcularSoma(List<double> numeros)
+{
+    double soma = 0;
+    foreach (double num in numeros)
+        soma += num;
+
+    return soma;
 }
+}
+
