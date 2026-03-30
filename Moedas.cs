@@ -1,10 +1,8 @@
-using System;
-using System.Data;
 using System.Globalization;
 
 Console.WriteLine("--- Conversor de Moedas ---");
 Console.WriteLine("Digite o valor em Reais: R$");
-decimal valorReal = decimal.Parse(Console.ReadLine()); 
+decimal valorReal = decimal.Parse(Console.ReadLine());
 
 Console.WriteLine("Escolha a moeda: ");
 Console.WriteLine("1 - Dollar");
