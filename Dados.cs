@@ -1,4 +1,4 @@
-using System;
+/*using System;
 
 Console.Write("Primeiro jogador, digite seu nome: ");
 string player1 = Console.ReadLine();
@@ -86,3 +86,4 @@ else if (pontos2 > pontos1)
 {
     Console.WriteLine($"{player2} venceu o jogo!");
 }
+*/
