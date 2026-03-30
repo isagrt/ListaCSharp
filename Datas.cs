@@ -1,7 +1,5 @@
-using System;
-using System.Data.Common;
+/*using System;
 using System.Globalization;
-using Microsoft.VisualBasic;
 
 DataConfiguracao config = new DataConfiguracao();
 
@@ -21,10 +19,12 @@ config.DefinirFormato(opcao);
 
 
 Evento eniac = new Evento //objeto evento
-(
-    /*nome*/"ENIAC",
-    /*data*/new DateTime(1946, 8, 15),
-    /*descricao*/"Os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo."
+(     //nome
+     "ENIAC",
+    //data
+    new DateTime(1946, 8, 15),
+    //descricao
+    "Os norte-americanos John Eckert e John Mauchly apresentaram o ENIAC, o primeiro equipamento eletrônico chamado de computador no mundo."
 
 );
 Evento rfc1 = new Evento
@@ -112,4 +112,4 @@ class DataConfiguracao
                 return data.ToString();
         }
     }
-}
+}*/
