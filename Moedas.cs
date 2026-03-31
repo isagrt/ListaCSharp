@@ -1,4 +1,4 @@
-using System.Globalization;
+/*using System.Globalization;
 
 Console.WriteLine("--- Conversor de Moedas ---");
 Console.WriteLine("Digite o valor em Reais: R$");
@@ -71,3 +71,4 @@ public enum Moeda
     Libra = 4
 }
 
+*/
